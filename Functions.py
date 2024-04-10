@@ -46,7 +46,13 @@ from scipy.optimize import curve_fit
 from scipy.integrate import quad
 from matplotlib.widgets import Slider
 
-
+def correct_round(val):
+    # Same round function as matlab approximation
+    if (float(val) % 1) >= 0.5:
+        x = math.ceil(val)
+    else:
+        x = round(val)
+    return x
 
 
 def MatToUint8(Image):
