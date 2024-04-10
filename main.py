@@ -107,7 +107,7 @@ while i<numimages:
 #
 #
 # # DEPRESSION QUANTIFICATION
-lowering_factor =  int(np.round((15*(Im_filt[0].shape[1]))/320))
+lowering_factor =  int(correct_round((15*(Im_filt[0].shape[1]))/320))
 i=0
 pmax1=[]
 pmax2=[]
